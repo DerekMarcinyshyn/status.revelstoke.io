@@ -1,11 +1,11 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "DerekMarcinyshyn/status.revelstoke.io",
+    "description": "Simple monitor application.",
+    "keywords": ["monitor", "laravel", "uptime"],
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=7.0.0",
+        "php": ">=7.1.0",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
@@ -31,7 +31,8 @@
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
-        }
+        },
+        "files": ["tests/utilities/functions.php"]
     },
     "extra": {
         "laravel": {
