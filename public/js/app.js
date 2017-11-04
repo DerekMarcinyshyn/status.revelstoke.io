@@ -1646,6 +1646,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['url'],
@@ -1671,6 +1674,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 _this.records = true;
                 _this.recordsText = data;
             });
+        },
+        hide: function hide() {
+            this.records = false;
         }
     }
 });
@@ -4069,7 +4075,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.records {\n    background: #414141;\n    color: #ccc;\n    margin: 10px 0;\n    padding: 20px 10px;\n}\n", ""]);
+exports.push([module.i, "\n.records {\n    background: #414141;\n    color: #ccc;\n    margin: 10px 0;\n    padding: 20px 10px;\n}\n.records .btn-link {\n    color: #ccc;\n}\npre {\n    background-color: #414141;\n    color: #ccc;\n    border:1px solid #414141;\n}\n", ""]);
 
 // exports
 
@@ -32112,8 +32118,21 @@ var render = function() {
     _vm._v(" "),
     _vm.records
       ? _c("div", [
-          _c("pre", { staticClass: "records" }, [
-            _vm._v(_vm._s(_vm.recordsText))
+          _c("div", { staticClass: "records" }, [
+            _c("p", [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-link pull-right",
+                  on: { click: _vm.hide }
+                },
+                [_c("span", { staticClass: "glyphicon glyphicon-remove" })]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "clearfix" }),
+            _vm._v(" "),
+            _c("pre", [_vm._v(_vm._s(_vm.recordsText))])
           ])
         ])
       : _vm._e()
