@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
@@ -10,9 +10,9 @@
                     <table class="table table-striped">
                         <tr>
                             <th>url</th>
-                            <th>uptime status</th>
+                            <th>status</th>
                             <th>last check</th>
-                            <th>cert status</th>
+                            <th>cert</th>
                             <th>cert expiry</th>
                             <th>cert issuer</th>
                         </tr>
