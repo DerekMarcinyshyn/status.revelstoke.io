@@ -17,14 +17,22 @@
                             <th>cert issuer</th>
                         </tr>
                         @foreach ($monitors as $monitor)
-                        <tr>
-                            <td>{{ $monitor->url }}</td>
-                            <td>{{ $monitor->uptime_status }}</td>
-                            <td>{{ $monitor->uptime_last_check_date->diffForHumans() }}</td>
-                            <td>{{ $monitor->certificate_status }}</td>
-                            <td>{{ $monitor->certificate_expiration_date }}</td>
-                            <td>{{ $monitor->certificate_issuer }}</td>
-                        </tr>
+                            <tr @if ($monitor->uptime_status === 'down') style="background-color:darkred;color:#ddd;" @endif>
+                                <td>{{ $monitor->url }}</td>
+                                <td>{{ $monitor->uptime_status }}</td>
+                                <td>
+                                    @if (! is_null($monitor->uptime_last_check_date))
+                                        {{ $monitor->uptime_last_check_date->diffForHumans() }}
+                                    @endif
+                                </td>
+                                <td>{{ $monitor->certificate_status }}</td>
+                                <td>
+                                    @if (! is_null($monitor->certificate_expiration_date))
+                                        {{ $monitor->certificate_expiration_date->diffForHumans() }}
+                                    @endif
+                                </td>
+                                <td>{{ $monitor->certificate_issuer }}</td>
+                            </tr>
                         @endforeach
                     </table>
                 </div>
