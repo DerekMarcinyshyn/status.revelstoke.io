@@ -10,6 +10,7 @@
                     <table class="table table-striped">
                         <tr>
                             <th>url</th>
+                            <th>dns</th>
                             <th>status</th>
                             <th>last check</th>
                             <th>cert</th>
@@ -19,6 +20,7 @@
                         @foreach ($monitors as $monitor)
                             <tr @if ($monitor->uptime_status === 'down') style="background-color:darkred;color:#ddd;" @endif>
                                 <td>{{ $monitor->url }}</td>
+                                <td><dns :url="'{{ $monitor->url }}'"></dns></td>
                                 <td>{{ $monitor->uptime_status }}</td>
                                 <td>
                                     @if (! is_null($monitor->uptime_last_check_date))

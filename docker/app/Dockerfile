@@ -20,7 +20,7 @@ RUN echo "deb http://ppa.launchpad.net/ondrej/php/ubuntu xenial main" > /etc/apt
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E5267A6C \
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C300EE8C \
     && apt-get update \
-    && apt-get install -y curl zip unzip git supervisor sqlite3 \
+    && apt-get install -y curl zip unzip git supervisor sqlite3 dnsutils \
     && apt-get install -y nginx php7.1-fpm php7.1-cli php7.1-mcrypt php7.1-gd php7.1-mysql \
        php7.1-pgsql php7.1-imap php-memcached php7.1-mbstring php7.1-xml php7.1-curl \
        php7.1-imagick php7.1-zip php7.1-bcmath php7.1-sqlite3 php7.1-xdebug \
