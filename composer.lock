@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f39bf9e06adf9cfa8573246a55254e5c",
+    "content-hash": "fd3c8ddd0cb1ce29297dd65ae63b5c1f",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1626,6 +1626,59 @@
             ],
             "description": "Simple Docker dev environments",
             "time": "2017-10-21T17:02:04+00:00"
+        },
+        {
+            "name": "spatie/dns",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/dns.git",
+                "reference": "cf9ac2654555b3272ac4d998e66239649ee61eec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/dns/zipball/cf9ac2654555b3272ac4d998e66239649ee61eec",
+                "reference": "cf9ac2654555b3272ac4d998e66239649ee61eec",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "symfony/process": "^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Dns\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Harish Toshniwal",
+                    "email": "harish@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Retrieve DNS records",
+            "homepage": "https://github.com/spatie/dns",
+            "keywords": [
+                "dns",
+                "spatie"
+            ],
+            "time": "2017-11-03T13:10:47+00:00"
         },
         {
             "name": "spatie/laravel-uptime-monitor",
