@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>status.revelstoke.io</title>
+        <title>status.monashee.software</title>
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
         <style>
             html, body {
-                background-color: #e6e6e6;
-                color: #636b6f;
+                background-color: #333;
+                color: #2f6f3c;
                 font-family: 'Source Code Pro', sans-serif;
                 height: 100vh;
                 margin: 0;
@@ -44,7 +44,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #37854a;
                 padding: 0 25px;
                 font-size: 14px;
                 text-decoration: none;
@@ -68,12 +68,12 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">status.revelstoke.io</div>
+                <div class="title m-b-md">status.monashee.software</div>
 
                 <div class="links">
-                    <a href="https://www.sourceboards.com/">The Source</a>
+                    <a href="https://revelstokecurrent.com">Revelstoke Current</a>
                     <a href="https://www.monasheemountainmultimedia.com">MMM</a>
-                    <a href="https://www.revyweather.ca">Revy Weather</a>
+                    <a href="https://revyweather.com">Revy Weather</a>
                 </div>
             </div>
         </div>
